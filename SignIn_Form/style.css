@@ -20,10 +20,30 @@ body {
 }
 
 .form-wrapper {
-    min-height: 200px;
+    min-height: 250px;
     min-width: 320px;
-    padding: 30px 20px;
+    overflow: hidden;
     border-radius: 4px;
-    box-shadow: 0px 0px 15px #ccc;
+    box-shadow: 0px 0px 25px #8d8d8d;
     background: linear-gradient( -30deg, #8383ffc9, #de79ffe3 );
+}
+
+.form-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: blue;
+    width: 100%;
+    min-height: 175px;
+    /* box-shadow: 1px 1px 15px #0008, inset 0px 0px 20px #0004; */
+}
+
+.form-header h1, .form-header h3 {
+    margin: 8px 0;
+    cursor: default;
+}
+
+.sigin-form {
+    padding: 30px 20px;
 }
