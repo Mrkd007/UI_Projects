@@ -13,5 +13,5 @@ const step = () => {
     hrsElm.style.transform = 'rotate(' + hrsAngle + 'deg)';
 
     window.requestAnimationFrame(step);
-}asdasdasdasdas
+}
 window.requestAnimationFrame(step);
