@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #d2e6ff;
+  color: #fff;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-container {
+  width: 25rem;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #6baeff;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 8px #919395, inset 2px 2px 8px #2e66ae;
+  position: relative;
+}
+
+.game-container__reload {
+  font-size: 2rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+
+.game-container__title {
+  margin-bottom: 0;
+}
+
+.matrix-box {
+  background-color: #2e66ae;
+  border-radius: 0.25rem;
+}
+
+.matrix-box__row {
+  display: flex;
+}
+
+.square-box {
+  height: 4rem;
+  width: 4rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square-box__cross {
+  width: 0.25rem;
+  background-color: #fff;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+  transform: rotate(45deg) translateY(3px);
+  animation: animateCross .5s;
+}
+
+.square-box__cross-left {
+  transform: rotate(-45deg) translateY(3px);
+}
+
+.square-box__circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.25rem solid #fff;
+  border-radius: 50%;
+  animation: animateCircle .5s;
+}
+
+.score-box {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.score-box__player {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@keyframes animateCross {
+  from {
+    height: 0;
+  } to {
+    height: 2.5rem;
+  }
+}
+
+@keyframes animateCircle {
+  
+  from {
+    height: 0;
+    width: 0;
+  } to {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
